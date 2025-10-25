@@ -3,7 +3,8 @@ langchain==0.3.27
 langchain-groq==0.3.8
 langchain-community==0.3.29
 langchain-core==0.3.75
-duckduckgo-search==4.2.0  # Explicitly using duckduckgo-search
+duckduckgo-search==4.2.0
+ddgs==9.6.0  # Added to resolve the explicit 'ddgs' import error
 wikipedia==1.4.0
 arxiv==2.2.0
 python-dotenv==1.1.1
