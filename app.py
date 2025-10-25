@@ -2,8 +2,11 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_community.utilities import WikipediaAPIWrapper , ArxivAPIWrapper 
 from langchain_community.tools import ArxivQueryRun , WikipediaQueryRun,DuckDuckGoSearchRun
-# FINAL CORRECTION: Simplify agent imports for modern LangChain
-from langchain.agents import AgentExecutor, create_react_agent
+
+# FINAL ATTEMPT AT SPECIFIC IMPORTS TO AVOID AMBIGUOUS NAMESPACE
+from langchain.agents.agent import AgentExecutor 
+from langchain.agents.react.base import create_react_agent 
+
 from langchain import hub 
 from langchain_core.prompts import PromptTemplate 
 from langchain_community.callbacks import StreamlitCallbackHandler
