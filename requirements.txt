@@ -3,7 +3,7 @@ langchain==0.3.27
 langchain-groq==0.3.8
 langchain-community==0.3.29
 langchain-core==0.3.75
-duckduckgo-search==4.2.0
+duckduckgo-search==4.2.0  # Explicitly using duckduckgo-search
 wikipedia==1.4.0
 arxiv==2.2.0
 python-dotenv==1.1.1
